@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cisco Cloud Center</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <style>
+        html {
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: none;
+            width: 1px;
+            min-width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main {
+            width: 375px;
+            height: 375px;
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            background: linear-gradient(225deg, #3023AE 0%, #53A0FD 33.32%, #B4EC51 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #4A4A4A;
+            padding: 20px 15px;
+            justify-content: space-around;
+        }
+
+        main > * {
+            flex-shrink: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            background: white;
+            width: 190px;
+            height: 190px;
+            max-height: 100%;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .logo {
+            width: 135px;
+        }
+
+        .learn-link {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #084C9B;
+            border-radius: 19px;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        @media(max-height: 350px) {
+            h1, .logo-container {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>This video clip is sponsored by</h1>
+        <div class="logo-container">
+            <img class="logo" src="../images/cisco_logo.svg" />
+        </div>
+        <a class="learn-link" href="https://www.cisco.com/c/en/us/products/cloud-systems-management/cloudcenter/index.html" target="_blank">
+            Learn more about Cisco CloudCenter
+        </a>
+    </main>
+
+
+</body>
+</html>
